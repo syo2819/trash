@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/*後で消す*/
-
 /* â– åŸºæœ¬è£…é£¾ */ 
 	 
 /* æ–‡å­—è£…é£¾ */ 
@@ -228,9 +226,9 @@ input[type=radio] {
 	margin: 0;
 }
 
-/* TEXTAREAã®æŠ˜ã‚Šè¿”ã—ã‚’è‡ªç”±ã« */
+/* TEXTAREAの折り返しを自由に */
 textarea {
-	font-family: "ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯", "Osaka?ç­‰å¹…", monospace;
+	font-family: "MS ゴシック", "Osaka-等幅", monospace;
 	line-height: 1.2 !important;
 	tab-size: 4;
 	resize: vertical;
