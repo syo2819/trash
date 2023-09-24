@@ -15,9 +15,7 @@
 <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.1.1/css/bootstrap.css">
 
 
-<!-- whatusing
-<link rel="stylesheet" href="../css/style.css?20221009">
--->
+<link rel="stylesheet" href="files/css/trans.css">
 	
 <!-- copyright?
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -38,23 +36,6 @@
 
 
 <body>
-
-<div class="envlabel" id="PROD"></div>
-
-<!-- ■header menu -->
-<nav class="navbar navbar-default">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<a href="../home/index.php" class="navbar-brand"><img src="../img/instant_tools.png" height="24" alt="instant tools logo"> instant tools</a>
-			<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-main">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-		</div>
-<!-- □header menu -->
-
-
 <!-- ■body -->
 <div class="container">
 	<div class="row row-offcanvas row-offcanvas-right">
@@ -73,6 +54,7 @@
 					<div class="panel-body">
 
 						<div style="display: none;">
+						
 						<nobr>入力 <select id="inputEncode" class="form-control normal"></select><wbr>
 						出力 <select id="outputEncode" class="form-control normal"></select></nobr>
 						<select id="mode" class="form-control normal">
@@ -81,6 +63,7 @@
 						</select><br>
 						<input type="button" value="文字化け↓" id="文字化け" class="btn btn-primary">
 						</div>
+						
 						<textarea id="result_" style="position: fixed; right: 120vw;"></textarea>
 
 						入力履歴 <select id="inputHist" class="form-control normal"></select>
