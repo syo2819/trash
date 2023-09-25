@@ -3,7 +3,7 @@ $(function() {
 
   tra.onreadystatechange = function(){
     if (tra.readyState == 4){
-      if(tra.status == 200){
+      if (tra.status == 200){
         $('#notice').text("通信成功");
         $("#result").val(tra.responseText);
       }
