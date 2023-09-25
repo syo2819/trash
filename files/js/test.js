@@ -4,10 +4,10 @@ $(function() {
   tra.onreadystatechange = function(){
     if (tra.readyState == 4){
       if(tra.status == 200){
-        $('#notice').val() = "通信成功";
+        $('#notice').text("通信成功");
         $("#result").val() = tra.responseText;
       }
-      $("#notice").val() ="${tra.status} 通信ミス";
+      $("#notice").html() ="${tra.status} 通信ミス";
     }
   }
 
