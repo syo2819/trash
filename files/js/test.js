@@ -6,8 +6,9 @@ $(function() {
       if (tra.status == 200){
         $('#notice').text("通信成功");
         $("#result").val(tra.responseText);
+      }else{
+        $("#notice").html(`${tra.status} 通信ミス`);
       }
-      $("#notice").html(`${tra.status} 通信ミス`);
     }
   }
 
