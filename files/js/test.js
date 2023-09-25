@@ -3,12 +3,18 @@ $(function() {
 
   tra.onreadystatechange = function(){
     if (tra.readyState == 4){
-      // 受信したデータの処理を記述する
-      $("#result")
+      if(tra.status == 200){
+        $('#notice').val() = "通信成功";
+        $("#result").val() = tra.responseText;
+      }
+      $("#notice").val() ="${tra.status} 通信ミス";
     }
   }
 
   $("#崩壊").click(function(){
     alert("無事")
+    let ur = "https://script.google.com/macros/s/AKfycbyTYTcTLSFTg7PzjgWDPG7MTafvNR3pI_gcjDd6QPYbR7-iDBt4iMEyjoZNhQCEbNwiCw/exec?text=" + $("#input").val();
+    tra.open("GET", ur);
+    tra.send(null);
   });
 });
