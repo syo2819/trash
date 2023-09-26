@@ -19,11 +19,12 @@ $(function() {
 			return;
 		}
 		if ($("#input").val().length > 200) {
-			alert("文字列は200文字以内で入力して下さい");
+			alert("文章は200文字以内で入力して下さい");
 			$("#input").focus();
 			return;
 		}
     let ur = "https://script.google.com/macros/s/AKfycbyTYTcTLSFTg7PzjgWDPG7MTafvNR3pI_gcjDd6QPYbR7-iDBt4iMEyjoZNhQCEbNwiCw/exec?text=" + $("#input").val();
+    ur = "a.com";
     tra.open("GET", ur);
     tra.send(null);
   });
