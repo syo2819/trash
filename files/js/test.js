@@ -7,7 +7,7 @@ $(function() {
         $('#notice').text("通信成功");
         $("#result").val(tra.responseText);
       }else{
-        $("#notice").html(`${tra.status} 通信ミス`);
+        $("#notice").html(`${tra.status} 通信失敗`);
       }
     }
   }
@@ -24,7 +24,6 @@ $(function() {
 			return;
 		}
     let ur = "https://script.google.com/macros/s/AKfycbyTYTcTLSFTg7PzjgWDPG7MTafvNR3pI_gcjDd6QPYbR7-iDBt4iMEyjoZNhQCEbNwiCw/exec?text=" + $("#input").val();
-    ur = "a.com";
     tra.open("GET", ur);
     tra.send(null);
   });
