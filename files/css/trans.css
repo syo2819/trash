@@ -71,7 +71,7 @@ ul.notes li:before {
 	margin-left: -18px;
 }
 
-/* å®šç¾©ãƒªã‚¹ãƒˆã®èª¿æ•´ */
+/* 定義リストの調整 */
 dt {
 	font-size: 17px;
 }
@@ -85,15 +85,15 @@ hr {
 	margin: 10px 0;
 }
  
-/* ãƒ†ãƒ¼ãƒ–ãƒ«é–¢é€£ */ 
+/* テーブル関連 */ 
 
-/* bootstrap.min.cssã®ä¸Šæ›¸ãã€‚ãƒ†ãƒ¼ãƒ–ãƒ«ã®æ ªã®å¦™ãªç©ºç™½ã®å‰Šé™¤ */
+/* bootstrap.min.cssの上書き。テーブルの株の妙な空白の削除 */
 .table {
 	margin-top: 2px !important;
 	margin-bottom: 3px !important;
 }
 
-/* æƒ…å ±ä¸€è¦§ãƒ†ãƒ¼ãƒ–ãƒ«ç”¨ */
+/* 情報一覧テーブル用 */
 /* è‡ªç”±ã«æŠ˜ã‚Šè¿”ã—ã•ã›ã€ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆå´©ã‚Œã‚’å‡ºã•ã¬ã‚ˆã† */
 .infoTable td, textarea {
 	word-break: break-all;
