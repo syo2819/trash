@@ -27,4 +27,9 @@ $(function() {
     tra.open("GET", ur);
     tra.send(null);
   });
+
+  $("#クリア").click(function(){
+    $("#input, #result").val("");
+    $("#notice").text("");
+  });
 });
